@@ -1,0 +1,11 @@
+Ohjelman käynnistyttyä käyttäjää kehotetaan valitsemaan pelaajien ja korttien määrä sekä haluttu seed arvo korttien aropomista varten. Tämän jälkeen pelaaja painaa play nappulaa ja häneltä kysytään pelaajien nimiä. Nimet tulee syöttää muodossa player1,player2,… jne. Nimien syöttämisen jälkeen ohjelma kehottaa ensimmäistä pelaajaa kääntämään kaksi korttia. Korttien kääntäminen tapahtuu painamalla korttia. Pelin tavoitteena on löytää käännetylle kortille pari. Mikäli pelaaja kääntää kaksi saman tunnisteen omaavaa korttia saa hän yhden pisteen ja kyseinen korttipari poistuu pelilaudalta. Tällöin pelaaja saa jatkaa vuoroansa ja yrittää etsiä toista paria. Tämä jatkuu niin kauan kunnes pelaaja ei löydä paria, jolloin vuoro siirtyy seuraavalle pelaajalle. Peli pyörii niin kauan kunnes kortteja on jäljellä tai käyttäjä painaa quit nappulaa. Pelin päättyessä käyttäjälle tulostetaan voittaja tai mikäli kyseessä on tasapeli niin voittajat.
+
+Ohjelma on toteutettu tekemällä gameengine luokka joka on vastuussa pelin pyörittämisestä. Gameengine luokan toteutukseen käytettiin vanhasta projektista kopioituja luokkia card ja player. 
+Card luokka kuvaa yhtä korttia ja sen ominsaisuuksia ja player luokka taas yhtä pelaajaa ja sen ominaisuuksia. Mainwindow luokka taas toteuttaa pelin graafisen toteutuksen ja käskyttää gameengine luokkaa käyttäjän toteuttamien tapahtumien mukaan.
+
+Lisäosina projektiin toteutin seuraavat ominaisuudet:
+
+Pelissä voi olla vaihteleva määrä pelaajia. Määrää kysytään käyttäjältä pelin alussa.
+
+Käyttäjä voi antaa pelaajille nimet.
+
